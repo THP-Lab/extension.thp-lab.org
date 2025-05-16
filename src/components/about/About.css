@@ -62,7 +62,7 @@
   max-width: 400px;
   margin-left: 20px;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 100;
   font-family: sans-serif;
   line-height: 26px;
@@ -100,5 +100,40 @@
 
   .lock {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+ .about {
+    flex-direction: column;
+    height: auto;
+   
+    align-items: center;
+    text-align: center;
+  }
+
+  .about h2 {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+
+  .about p {
+    margin: 20px auto;
+    font-size: 17px;
+    max-width: 95vw;
+  }
+
+  .lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lock img {
+    width: 80px;
+    height: 80px;
   }
 }
